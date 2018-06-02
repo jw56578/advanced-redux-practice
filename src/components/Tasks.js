@@ -25,5 +25,12 @@ function Tasks(props) {
                     </div>);
 }
 
-export default Tasks;
+function mapStateToProps(state){
+    return{
+     newTasks:state.newTasks
+    }
+   }
+   
+   const TasksContainer= connect(mapStateToProps)(Tasks);
+   export default TasksContainer;
 

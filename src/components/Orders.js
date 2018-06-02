@@ -26,4 +26,11 @@ function Orders(props) {
     </div>);
 }
 
-export default Orders;
+function mapStateToProps(state){
+  return{
+   newOrders:state.newOrders
+  }
+ }
+ 
+ const NewOrdersContainer= connect(mapStateToProps)(Orders);
+ export default NewOrdersContainer;

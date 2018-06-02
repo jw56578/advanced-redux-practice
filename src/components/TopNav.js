@@ -66,4 +66,11 @@ function TopNav(props) {
     </ul>);
 }
 
-export default TopNav;
+function mapStateToProps(state){
+    return{
+     messages:state.messages
+    }
+   }
+   
+   const TopNavContainer= connect(mapStateToProps)(TopNav);
+   export default TopNavContainer;

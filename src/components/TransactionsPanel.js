@@ -35,4 +35,11 @@ function TransactionsPanel(props) {
     </div> );
 }
 
-export default TransactionsPanel;
+function mapStateToProps(state){
+    return{
+     orders:state.orders
+    }
+   }
+   
+   const TransactionsPanelContainer= connect(mapStateToProps)(TransactionsPanel);
+   export default TransactionsPanelContainer;
