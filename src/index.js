@@ -12,10 +12,6 @@ ReactDOM.render(
  <App
  taskItem={taskItem}
  dateTime={dateTime}
- newComments={newComments}
- newTasks={newTasks}
- newOrders={newOrders}
- tickets={tickets} 
 /></Provider>,
  document.getElementById('root')
 );
